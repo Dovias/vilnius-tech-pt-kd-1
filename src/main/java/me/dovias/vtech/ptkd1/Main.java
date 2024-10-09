@@ -7,6 +7,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class Main {
+    // TODO: Perkelti i utilities package:
     public static String getEveryNthCharString(String string, int n) {
         StringBuilder builder = new StringBuilder();
         for (int index = 0; index < string.length(); index++) {

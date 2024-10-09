@@ -23,7 +23,11 @@ public class Main {
 
         List<Animal> animals = deserializer.get();
         for (Animal animal : animals.stream().sorted().toList()) {
-            System.out.print(animal.getName().toUpperCase() + " : " + Main.getEveryNthCharString(animal.getBreed(), 2) + " : " + (2019 - animal.getBirthYear()));
+            System.out.print(animal.getName().toUpperCase());
+            System.out.print(" : ");
+            System.out.print(Main.getEveryNthCharString(animal.getBreed(), 2));
+            System.out.print(" : ");
+            System.out.print(2019 - animal.getBirthYear()));
             System.out.printf(" %.2f", animal.getWeight());
             System.out.println();
         }
